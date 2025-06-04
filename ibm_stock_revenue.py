@@ -46,7 +46,7 @@ html_data = r.text
 
 soup = BeautifulSoup(html_data, 'html.parser')
 tables = soup.find_all('tbody')
-revenue_table = tables[0]
+revenue_table = tables[1]
 rows = revenue_table.find_all('tr')
 
 revenue_list = []
@@ -80,7 +80,7 @@ html_data_2 = r2.text
 
 soup_2 = BeautifulSoup(html_data_2, 'html.parser')
 tables_2 = soup_2.find_all('tbody')
-revenue_table_2 = tables_2[0]
+revenue_table_2 = tables_2[1]
 rows_2 = revenue_table_2.find_all('tr')
 
 revenue_list_2 = []
